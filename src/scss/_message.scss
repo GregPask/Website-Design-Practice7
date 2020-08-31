@@ -1,0 +1,37 @@
+.message {
+  height: 100%;
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.message__content {
+  max-width: 700px;
+  margin: auto;
+  width: 100%;
+  padding: 1rem;
+  p {
+    margin: 1.5rem 0;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(51, 51, 51, 0.244);
+    margin: 0.6rem 0;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 15px 30px;
+    border-radius: 2rem;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .form__flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 1rem;
+  }
+}

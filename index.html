@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css"
+    />
+    <link rel="stylesheet" href="./static/styles/style.css" />
+  </head>
+  <body onload="startFunction()">
+
+
+    <!-- Navbar ======================================================================= -->
+
+    <div class="navbar">
+      <div class="navbar__left">
+        <h4>OneSchool</h4>
+      </div>
+
+      <div class="navbar__middle">
+        <ul class="navbar__list">
+          <li>
+            <a class="navbar__item navbar__item--active" id="navbar__item1" href="#hero">Home</a>
+          </li>
+          <li><a class="navbar__item" id="navbar__item2" href="#courses">Courses</a></li>
+          <li><a class="navbar__item" id="navbar__item3" href="#programs">Programs</a></li>
+          <li><a class="navbar__item" id="navbar__item4" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar__right">
+        <button>CONTACT US</button>
+        <i onclick="toggleNav()" class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </div>
+    <!-- End of Navbar -------------------------------------------------------------->
+
+
+
+
+    <!-- SIDEBAR ----------------------------------------------------------------------->
+
+    <!-- <div class="sidebar sidebar--active"> -->
+    <div class="sidebar z-depth-2">
+      <div class="sidebar__content">
+        <div class="sidebar__icon">
+          <i onclick="toggleNav()" class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+        <ul class="sidebar__list">
+          <li>
+            <a href="#hero" class="sidebar__item">Home</a>
+          </li>
+          <li><a class="sidebar__item" href="#courses">Courses</a></li>
+          <li><a class="sidebar__item" href="#programs">Programs</a></li>
+          <li><a class="sidebar__item" href="#contact">Contact</a></li>
+        </ul>
+        <!-- <button>CONTACT US</button> -->
+      </div>
+    </div>
+
+    <!-- End of SIDEBAR ------------------------------------------------------------------>
+
+
+
+
+    <!-- HERO Section  ----------------------------------------------------------------------->
+    <div class="hero" id="hero">
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <div class="hero__left">
+          <h2 class="wow fadeInUp" data-wow-delay="0.1s">
+            Learn From The Expert
+          </h2>
+          <p class="wow fadeInUp" data-wow-delay="0.2s">
+            Here we offer a wide variety of the latest products.
+          </p>
+          <button class="wow fadeInUp" data-wow-delay="0.3s">
+            ADMISSION NOW
+          </button>
+        </div>
+
+        <div class="hero__right">
+          <div class="hero__form wow fadeInUp" data-wow-delay="0.4s">
+            <h3>Sign Up</h3>
+
+            <input type="text" placeholder="Email Addresses" />
+            <input type="text" placeholder="Password" />
+            <input type="text" placeholder="Re-type Password" />
+
+            <button>SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Hero ------------------------------------------------------------------------->
+
+
+
+    <!-- COURSES SECTION ---------------------------------------------------------->
+    <div class="courses" id="courses">
+      <div class="courses__head">
+        <h1 class="wow fadeInUp" data-wow-delay="0.1s">Courses</h1>
+      </div>
+
+      <!-- BODY  -->
+      <div class="courses__body">
+        <div class="courses_grid">
+          <!-- Item 1 -->
+          <div class="courses__item z-depth-2 wow fadeInUp" data-wow-delay="0.1s">
+            <img
+              class="courses__img"
+              src="https://colorlib.com/preview/theme/oneschool/images/img_4.jpg"
+              alt=""
+            />
+            <div class="courses__info">
+              <div class="courses__price z-depth-2">
+                <span>£40</span>
+              </div>
+
+              <h4>Study Law of Physics</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque, corrupti.
+              </p>
+            </div>
+            <div class="courses__footer">
+              <i class="fa fa-users" aria-hidden="true"> 2,913 students</i>
+              <span class="fa fa-comments" aria-hidden="true"> 2 </span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="courses__item z-depth-2  wow fadeInUp" data-wow-delay="0.2s"">
+            <img
+              class="courses__img"
+              src="https://colorlib.com/preview/theme/oneschool/images/img_5.jpg"
+              alt=""
+            />
+            <div class="courses__info">
+              <div class="courses__price z-depth-2">
+                <span>£56</span>
+              </div>
+
+              <h4>Logo Design</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque, corrupti.
+              </p>
+            </div>
+            <div class="courses__footer">
+              <i class="fa fa-users" aria-hidden="true"> 89 courses</i>
+              <span class="fa fa-comments" aria-hidden="true"> 15 </span>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="courses__item z-depth-2  wow fadeInUp" data-wow-delay="0.3s"">
+            <img
+              class="courses__img"
+              src="https://colorlib.com/preview/theme/oneschool/images/img_6.jpg"
+              alt=""
+            />
+            <div class="courses__info">
+              <div class="courses__price z-depth-2">
+                <span>£99</span>
+              </div>
+              <h4>JS Programming Language</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque, corrupti.
+              </p>
+            </div>
+            <div class="courses__footer">
+              <i class="fa fa-users" aria-hidden="true"> 15 Experts</i>
+              <span class="fa fa-comments" aria-hidden="true"> 8 </span>
+            </div>
+          </div>
+        </div>
+        <!-- End of Grid-->
+
+        <div class="courses__buttons">
+          <button>PREV</button>
+          <button>NEXT</button>
+        </div>
+      </div>
+      <!-- End of Body -->
+    </div>
+
+    <!-- End of Courses -->
+
+    <!-- PROGRAMS ------------------------------------- -->
+
+    <div class="programs" id="programs">
+      <div class="programs__content">
+        <h1 class=" wow fadeInUp" data-wow-delay="0.1s"">Our Programs</h1>
+        <p class=" wow fadeInUp" data-wow-delay="0.2s"">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+          dignissimos perferendis ab facilis voluptatem ea minus tenetur
+          doloribus ut eaque atque dolore adipisci esse facere dicta impedit,
+          nisi, quos eius.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- PROGRAM 1 --------------------->
+
+    <div class="program1">
+      <div class="program1__left  wow fadeInUp" data-wow-delay="0.1s"">
+        <img
+          src="https://colorlib.com/preview/theme/oneschool/images/undraw_youtube_tutorial.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="program1__right  wow fadeInUp" data-wow-delay="0.2s"">
+        <div class="program1__content">
+          <h3>We Are Excellent in Education</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus tempore ullam dolores quam quasi atque at ipsa rem
+            tempora.
+          </p>
+
+          <div class="program__icons">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <p>22,931 Yearly Graduates</p>
+          </div>
+
+          <div class="program__icons">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <p>150 Universities Worldwide</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- PROGRAM 2 -------------------------------- -->
+
+
+    <div class="program1">
+      <div class="program1__right  wow fadeInUp" data-wow-delay="0.2s"">
+        <div class="program1__content">
+          <h3>Strive for Excellent</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus tempore ullam dolores quam quasi atque at ipsa rem
+            tempora.
+          </p>
+
+          <div class="program__icons">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <p>22,931 Yearly Graduates</p>
+          </div>
+
+          <div class="program__icons">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <p>150 Universities Worldwide</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="program1__left  wow fadeInUp" data-wow-delay="0.1s"">
+        <img
+          src="https://colorlib.com/preview/theme/oneschool/images/undraw_teaching.svg"
+          alt=""
+        />
+      </div>
+    </div>
+
+
+
+
+      <!-- PROGRAM 3 -------------------------------- -->
+
+      <div class="program1">
+        <div class="program1__left  wow fadeInUp" data-wow-delay="0.1s">
+          <img
+            src="https://colorlib.com/preview/theme/oneschool/images/undraw_teacher.svg"
+            alt=""
+          />
+        </div>
+  
+        <div class="program1__right  wow fadeInUp" data-wow-delay="0.2s">
+          <div class="program1__content">
+            <h3>Education if Life</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus tempore ullam dolores quam quasi atque at ipsa rem
+              tempora.
+            </p>
+  
+            <div class="program__icons">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <p>22,931 Yearly Graduates</p>
+            </div>
+  
+            <div class="program__icons">
+              <i class="fa fa-university" aria-hidden="true"></i>
+              <p>150 Universities Worldwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- Message US SECTION ----------------------------------------------------->
+
+
+      <div class="message" id="contact">
+        <div class="message__content wow fadeInUp" data-wow-delay="0.2s">
+          <h1>Message Us</h1>
+          <p>Feel free to drop us a message and provide us with and feedback on our products that you may have. Thankyou.</p>
+
+          <form class="message__form">
+
+            <div class="form__flex">
+                <input class="form__test" type="text" placeholder="First name">
+                <input class="form__test" type="text" placeholder="Last name">
+            </div>
+
+            <input class="form__test" type="text" placeholder="Subject">
+            <input class="form__test" type="text" placeholder="Email">
+
+            <textarea class="form__test" placeholder="Write your message here." name="" id="" cols="30" rows="10"></textarea>
+              <button id="message__form__btn" type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+
+
+
+
+      <div class="footer">
+          <div class="footer__content">
+              <div class="footer__left">
+                  <h4>About ONESCHOOL</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate eveniet maxime natus, dolorum nihil, est suscipit mollitia optio vitae odit amet doloremque?.</p>
+              </div>
+              <div class="footer__center">
+                <h4>Links</h4>
+
+                <a href="#hero">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#programs">Programs</a>
+                <a href="#contact">Contact</a>
+                
+              </div>
+
+              <div class="footer__right">
+                  <h4>SUBSCRIBE</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque sequi harum ratione enim ullam, dicta odio ipsum velit aliquid voluptatem.</p>
+
+                <div class="footer__form">
+                  <input type="text" placeholder="Email">
+                  <button>SUBSCRIBE</button>
+                </div>
+
+              </div>
+          </div>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./static/js/all.js"></script>
+  </body>
+</html>
