@@ -35,6 +35,10 @@ function scss() {
             { browsers: ["last 10 version"] }),
         cssnano()
         ]))
+        .pipe(purgecss({
+            content: ['*.html'],
+            rejected: false
+        }))
         .pipe(gulp.dest("./static/styles"))
         .pipe(browserSync.stream());
 }
