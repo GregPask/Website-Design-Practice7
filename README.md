@@ -1,22 +1,21 @@
 # Website Design Pracice7
 
-
 #### Live Version
+
 https://pasky-design.netlify.app/
 
+###### Into to using the B.E.M methodology for css.
 
-######  Into to using the B.E.M methodology for css.
-######  Recreated a template from Scratch using B.E.M Scss and Flexbox.
-
+###### Recreated a template from Scratch using B.E.M Scss and Flexbox.
 
 ## Installation
 
-``` bash
+```bash
 
-# Install dependencies 
+# Install dependencies
 > npm install
 
-# Build static assets 
+# Build static assets
 > gulp build
 
 # Live server
@@ -24,5 +23,3 @@ https://pasky-design.netlify.app/
 > live-server --port=8082
 
 ```
-
-
